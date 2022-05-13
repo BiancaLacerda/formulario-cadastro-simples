@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{ 
+    display: grid;
+    width: 100%;
+    height: 100%;    
+    place-items: center;
+    background: #e2cfe4;
+}
+
+.box{
+    max-width: 390px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.box .texto-titulo{
+    display: flex;
+    width: 200%;
+}
+.box .texto-titulo .titulo{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.box .container{
+    width: 100%;
+}
+
+.container .interno form{
+
+}
+
+.interno form .campo{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    
+
+}
+
+.interno form .campo input{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border: 1px solid #d3d3d3;
+    transition: all 0.5s ease;
+    
+
+    /* Declaração para aparecer no Firefox */
+	-moz-border-radius: 10px;
+	/* Para exibir nos outros navegadores como Chrome, safari, opera*/
+	-webkit-border-radius: 10px;
+}
+
+.interno form .campo input:focus{
+    border-color: #d160be;
+}
+
+.interno form .proximo-link{
+    margin-top: 5px;
+}
+
+.interno form .proximo-link a, 
+.interno form .cadastro-link a{
+    color: #d160be;
+    text-decoration: none;
+}
+
+.interno form .cadastro-link{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.interno form .proximo-link a:hover, 
+.interno form .cadastro-link a:hover{
+    text-decoration: underline;
+
+}
+
+.interno form .campo input[type="submit"]{
+    background: -webkit-linear-gradient(left, #800080, #e772a9a4);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    border: none;
+    cursor: pointer;
+}
